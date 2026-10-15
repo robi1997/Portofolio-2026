@@ -11,15 +11,15 @@
             theme: {
                 extend: {
                     colors: {
-                        navy: {
-                            DEFAULT: '#0B192C',
-                            dark: '#030712',
-                            light: '#1E3E62',
+                        brand: {
+                            DEFAULT: '#2F4F4F', /* Dark Slate Gray / Deep Slate */
+                            dark: '#1C2E2E',
+                            light: '#4A7C7C',
                         },
-                        gold: {
-                            DEFAULT: '#D4AF37',
-                            light: '#F3CA52',
-                            dark: '#AA820A',
+                        accent: {
+                            DEFAULT: '#E6C687', /* Warm Champagne Gold / Soft Bronze */
+                            light: '#F4E4BC',
+                            dark: '#C29B4E',
                         }
                     }
                 }
@@ -37,77 +37,77 @@
         .glass-card {
             background: rgba(255, 255, 255, 0.9);
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(212, 175, 55, 0.2);
+            border: 1px solid rgba(230, 198, 135, 0.3);
         }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased selection:bg-gold selection:text-navy-dark">
+<body class="bg-stone-50 text-slate-800 antialiased selection:bg-accent selection:text-brand-dark">
 
     <!-- Navbar / Header -->
-    <header class="fixed top-0 left-0 right-0 z-50 bg-navy/95 backdrop-blur-md text-white border-b border-gold/20 shadow-lg">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-brand/95 backdrop-blur-md text-white border-b border-accent/20 shadow-lg">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <a href="#hero" class="flex items-center gap-3 group">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-gold to-gold-light flex items-center justify-center text-navy font-bold text-xl shadow-md group-hover:scale-105 transition">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-accent to-accent-light flex items-center justify-center text-brand-dark font-bold text-xl shadow-md group-hover:scale-105 transition">
                     RK
                 </div>
                 <div>
                     <span class="font-bold text-lg tracking-wide block leading-tight">Robi Kumbara</span>
-                    <span class="text-xs text-gold-light font-medium tracking-wider uppercase">IT GRC & Jira Specialist</span>
+                    <span class="text-xs text-accent-light font-medium tracking-wider uppercase">IT GRC & Jira Specialist</span>
                 </div>
             </a>
             <nav class="hidden md:flex items-center gap-8 font-medium text-sm">
-                <a href="#about" class="hover:text-gold transition">Tentang</a>
-                <a href="#experience" class="hover:text-gold transition">Pengalaman</a>
-                <a href="#projects" class="hover:text-gold transition">Proyek & Dashboard</a>
-                <a href="#skills" class="hover:text-gold transition">Keahlian</a>
-                <a href="#awards" class="hover:text-gold transition">Prestasi & Sertifikasi</a>
-                <a href="#contact" class="px-5 py-2.5 rounded-full bg-gold hover:bg-gold-light text-navy font-bold shadow-md transition transform hover:-translate-y-0.5">Kontak</a>
+                <a href="#about" class="hover:text-accent transition">Tentang</a>
+                <a href="#experience" class="hover:text-accent transition">Pengalaman</a>
+                <a href="#projects" class="hover:text-accent transition">Proyek & Dashboard</a>
+                <a href="#skills" class="hover:text-accent transition">Keahlian</a>
+                <a href="#awards" class="hover:text-accent transition">Prestasi & Sertifikasi</a>
+                <a href="#contact" class="px-5 py-2.5 rounded-full bg-accent hover:bg-accent-light text-brand-dark font-bold shadow-md transition transform hover:-translate-y-0.5">Kontak</a>
             </nav>
-            <button id="menu-btn" class="md:hidden text-2xl text-gold focus:outline-none">
+            <button id="menu-btn" class="md:hidden text-2xl text-accent focus:outline-none">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </div>
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-navy-dark border-t border-gold/10 px-6 py-4 space-y-3 font-medium text-sm">
-            <a href="#about" class="block hover:text-gold transition py-1">Tentang</a>
-            <a href="#experience" class="block hover:text-gold transition py-1">Pengalaman</a>
-            <a href="#projects" class="block hover:text-gold transition py-1">Proyek & Dashboard</a>
-            <a href="#skills" class="block hover:text-gold transition py-1">Keahlian</a>
-            <a href="#awards" class="block hover:text-gold transition py-1">Prestasi & Sertifikasi</a>
-            <a href="#contact" class="block text-center py-2 rounded-lg bg-gold text-navy font-bold mt-2">Kontak</a>
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-dark border-t border-accent/10 px-6 py-4 space-y-3 font-medium text-sm">
+            <a href="#about" class="block hover:text-accent transition py-1">Tentang</a>
+            <a href="#experience" class="block hover:text-accent transition py-1">Pengalaman</a>
+            <a href="#projects" class="block hover:text-accent transition py-1">Proyek & Dashboard</a>
+            <a href="#skills" class="block hover:text-accent transition py-1">Keahlian</a>
+            <a href="#awards" class="block hover:text-accent transition py-1">Prestasi & Sertifikasi</a>
+            <a href="#contact" class="block text-center py-2 rounded-lg bg-accent text-brand-dark font-bold mt-2">Kontak</a>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="hero" class="pt-32 pb-20 md:pt-44 md:pb-32 bg-gradient-to-b from-navy via-navy-light to-slate-900 text-white relative overflow-hidden">
-        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#D4AF37_1px,transparent_1px)] [background-size:16px_16px]"></div>
+    <section id="hero" class="pt-32 pb-20 md:pt-44 md:pb-32 bg-gradient-to-b from-brand via-brand-light to-slate-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#E6C687_1px,transparent_1px)] [background-size:16px_16px]"></div>
         <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12 items-center relative z-10">
             <div class="md:col-span-7 space-y-6">
-                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold/10 border border-gold/30 text-gold-light text-xs font-semibold tracking-wider uppercase">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/10 border border-accent/30 text-accent-light text-xs font-semibold tracking-wider uppercase">
                     <i class="fa-solid fa-shield-halved"></i> Profesional IT Governance, Risk & Compliance
                 </div>
                 <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight">
-                    Optimasi Tata Kelola IT, <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-light to-gold">Jira & EazyBI</span> Specialist.
+                    Optimasi Tata Kelola IT, <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent-light to-accent">Jira & EazyBI</span> Specialist.
                 </h1>
-                <p class="text-slate-300 text-base md:text-lg max-w-2xl leading-relaxed">
+                <p class="text-stone-200 text-base md:text-lg max-w-2xl leading-relaxed">
                     Profesional IT GRC & Jira Specialist dengan pengalaman lebih dari 6 tahun di industri perbankan (PT Bank Rakyat Indonesia). Peraih Juara 2 JIRA Competition, ahli dalam otomatisasi workflow, mitigasi risiko operasional, dan kepatuhan SQA.
                 </p>
                 <div class="flex flex-wrap gap-4 pt-2">
-                    <a href="#projects" class="px-7 py-3.5 rounded-xl bg-gold hover:bg-gold-light text-navy font-bold shadow-lg shadow-gold/20 transition transform hover:-translate-y-0.5 flex items-center gap-2">
+                    <a href="#projects" class="px-7 py-3.5 rounded-xl bg-accent hover:bg-accent-light text-brand-dark font-bold shadow-lg shadow-accent/20 transition transform hover:-translate-y-0.5 flex items-center gap-2">
                         <span>Lihat Proyek & Dashboard</span>
                         <i class="fa-solid fa-arrow-right text-xs"></i>
                     </a>
-                    <a href="#contact" class="px-7 py-3.5 rounded-xl border border-gold/40 hover:bg-gold/10 text-white font-semibold transition flex items-center gap-2">
-                        <i class="fa-solid fa-paper-plane text-gold"></i>
+                    <a href="#contact" class="px-7 py-3.5 rounded-xl border border-accent/40 hover:bg-accent/10 text-white font-semibold transition flex items-center gap-2">
+                        <i class="fa-solid fa-paper-plane text-accent"></i>
                         <span>Hubungi Saya</span>
                     </a>
                 </div>
             </div>
             <div class="md:col-span-5 flex justify-center">
                 <div class="relative">
-                    <div class="absolute -inset-1.5 rounded-3xl bg-gradient-to-tr from-gold to-gold-light opacity-50 blur-lg"></div>
-                    <div class="relative w-64 h-80 md:w-80 md:h-96 rounded-2xl overflow-hidden border-2 border-gold/40 shadow-2xl bg-navy-dark">
-                        <img src="https://i.ibb.co.com/DDZJNJfH/RK1.jpg" alt="Robi Kumbara" class="w-full h-full object-cover object-top filter contrast-105 brightness-105">
+                    <div class="absolute -inset-1.5 rounded-3xl bg-gradient-to-tr from-accent to-accent-light opacity-50 blur-lg"></div>
+                    <div class="relative w-64 h-80 md:w-80 md:h-96 rounded-2xl overflow-hidden border-2 border-accent/40 shadow-2xl bg-brand-dark">
+                        <img src="https://i.ibb.co.com/bgypJHrC/Foto-Diri.jpg" alt="Robi Kumbara" class="w-full h-full object-cover object-top filter contrast-105 brightness-105">
                     </div>
                 </div>
             </div>
@@ -118,45 +118,45 @@
     <section id="about" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-                <h2 class="text-xs uppercase tracking-widest text-gold-dark font-bold">Tentang Saya</h2>
-                <h3 class="text-3xl md:text-4xl font-extrabold text-navy">Profil Singkat & Latar Belakang</h3>
-                <div class="w-16 h-1 bg-gold mx-auto rounded-full"></div>
+                <h2 class="text-xs uppercase tracking-widest text-accent-dark font-bold">Tentang Saya</h2>
+                <h3 class="text-3xl md:text-4xl font-extrabold text-brand">Profil Singkat & Latar Belakang</h3>
+                <div class="w-16 h-1 bg-accent mx-auto rounded-full"></div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
                 <div class="md:col-span-5 space-y-6">
-                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 shadow-sm space-y-4">
+                    <div class="p-6 rounded-2xl bg-stone-50 border border-stone-200 shadow-sm space-y-4">
                         <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 rounded-xl bg-navy text-gold flex items-center justify-center text-xl font-bold">
+                            <div class="w-12 h-12 rounded-xl bg-brand text-accent flex items-center justify-center text-xl font-bold">
                                 <i class="fa-solid fa-user-tie"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-navy text-lg">Robi Kumbara</h4>
-                                <p class="text-xs text-slate-500">Jakarta, Indonesia</p>
+                                <h4 class="font-bold text-brand text-lg">Robi Kumbara</h4>
+                                <p class="text-xs text-stone-500">Jakarta, Indonesia</p>
                             </div>
                         </div>
-                        <div class="border-t border-slate-200 pt-4 space-y-2 text-sm">
-                            <div class="flex justify-between"><span class="text-slate-500">Pendidikan:</span> <span class="font-semibold text-slate-700">S1 Teknik Informatika, UNINDRA (2019)</span></div>
-                            <div class="flex justify-between"><span class="text-slate-500">IPK:</span> <span class="font-semibold text-slate-700">3.10 / 4.00</span></div>
-                            <div class="flex justify-between"><span class="text-slate-500">Pengalaman:</span> <span class="font-semibold text-slate-700">6+ Tahun di Perbankan</span></div>
-                            <div class="flex justify-between"><span class="text-slate-500">Institusi:</span> <span class="font-semibold text-slate-700">PT Bank Rakyat Indonesia</span></div>
+                        <div class="border-t border-stone-200 pt-4 space-y-2 text-sm">
+                            <div class="flex justify-between"><span class="text-stone-500">Pendidikan:</span> <span class="font-semibold text-stone-700">S1 Teknik Informatika, UNINDRA (2019)</span></div>
+                            <div class="flex justify-between"><span class="text-stone-500">IPK:</span> <span class="font-semibold text-stone-700">3.10 / 4.00</span></div>
+                            <div class="flex justify-between"><span class="text-stone-500">Pengalaman:</span> <span class="font-semibold text-stone-700">6+ Tahun di Perbankan</span></div>
+                            <div class="flex justify-between"><span class="text-stone-500">Institusi:</span> <span class="font-semibold text-stone-700">PT Bank Rakyat Indonesia</span></div>
                         </div>
                     </div>
                 </div>
-                <div class="md:col-span-7 space-y-6 text-slate-600 leading-relaxed text-base">
+                <div class="md:col-span-7 space-y-6 text-stone-600 leading-relaxed text-base">
                     <p>
-                        Saya adalah profesional IT GRC dan Jira/EazyBI Specialist dengan rekam jejak lebih dari 6 tahun berkontribusi di industri perbankan nasional, khususnya di <strong class="text-navy">PT Bank Rakyat Indonesia (Persero) Tbk</strong>.
+                        Saya adalah profesional IT GRC dan Jira/EazyBI Specialist dengan rekam jejak lebih dari 6 tahun berkontribusi di industri perbankan nasional, khususnya di <strong class="text-brand">PT Bank Rakyat Indonesia (Persero) Tbk</strong>.
                     </p>
                     <p>
                         Memiliki keahlian mendalam dalam optimasi workflow, manajemen insiden, peninjauan dokumen Change Management menggunakan SQA Checklist, evaluasi compliance scoring, serta perancangan dashboard analitik performa otomatis memanfaatkan Atlassian Jira & EazyBI.
                     </p>
                     <div class="grid grid-cols-2 gap-4 pt-2">
-                        <div class="p-4 rounded-xl bg-amber-50 border border-amber-200/60">
-                            <h5 class="font-bold text-navy text-sm mb-1"><i class="fa-solid fa-award text-gold mr-2"></i>Prestasi Utama</h5>
-                            <p class="text-xs text-slate-600">Juara 2 JIRA Competition Divisi APP BRI (Desember 2024).</p>
+                        <div class="p-4 rounded-xl bg-amber-50/60 border border-amber-200/60">
+                            <h5 class="font-bold text-brand text-sm mb-1"><i class="fa-solid fa-award text-accent-dark mr-2"></i>Prestasi Utama</h5>
+                            <p class="text-xs text-stone-600">Juara 2 JIRA Competition Divisi APP BRI (Desember 2024).</p>
                         </div>
-                        <div class="p-4 rounded-xl bg-blue-50 border border-blue-200/60">
-                            <h5 class="font-bold text-navy text-sm mb-1"><i class="fa-solid fa-certificate text-navy mr-2"></i>Sertifikasi</h5>
-                            <p class="text-xs text-slate-600">ISO/IEC 27001 Information Security Management System (Robere).</p>
+                        <div class="p-4 rounded-xl bg-teal-50/60 border border-teal-200/60">
+                            <h5 class="font-bold text-brand text-sm mb-1"><i class="fa-solid fa-certificate text-brand mr-2"></i>Sertifikasi</h5>
+                            <p class="text-xs text-stone-600">ISO/IEC 27001 Information Security Management System (Robere).</p>
                         </div>
                     </div>
                 </div>
@@ -165,25 +165,25 @@
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="py-20 bg-slate-50 border-t border-slate-200">
+    <section id="experience" class="py-20 bg-stone-50 border-t border-stone-200">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-                <h2 class="text-xs uppercase tracking-widest text-gold-dark font-bold">Karier Profesional</h2>
-                <h3 class="text-3xl md:text-4xl font-extrabold text-navy">Pengalaman Kerja</h3>
-                <div class="w-16 h-1 bg-gold mx-auto rounded-full"></div>
+                <h2 class="text-xs uppercase tracking-widest text-accent-dark font-bold">Karier Profesional</h2>
+                <h3 class="text-3xl md:text-4xl font-extrabold text-brand">Pengalaman Kerja</h3>
+                <div class="w-16 h-1 bg-accent mx-auto rounded-full"></div>
             </div>
             <div class="max-w-4xl mx-auto space-y-8">
                 <!-- Experience Item 1 -->
-                <div class="p-8 rounded-2xl bg-white border border-slate-200 shadow-sm relative pl-10 md:pl-12">
-                    <div class="absolute left-0 top-0 bottom-0 w-2.5 bg-gold rounded-l-2xl"></div>
+                <div class="p-8 rounded-2xl bg-white border border-stone-200 shadow-sm relative pl-10 md:pl-12">
+                    <div class="absolute left-0 top-0 bottom-0 w-2.5 bg-accent rounded-l-2xl"></div>
                     <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
                         <div>
-                            <h4 class="text-xl font-bold text-navy">IT GRC Specialist / Jira & EazyBI Specialist</h4>
-                            <p class="text-sm font-semibold text-gold-dark">PT Bank Rakyat Indonesia (Persero) Tbk - Jakarta</p>
+                            <h4 class="text-xl font-bold text-brand">IT GRC Specialist / Jira & EazyBI Specialist</h4>
+                            <p class="text-sm font-semibold text-accent-dark">PT Bank Rakyat Indonesia (Persero) Tbk - Jakarta</p>
                         </div>
-                        <span class="inline-block mt-2 md:mt-0 px-3 py-1 rounded-full bg-navy/10 text-navy font-semibold text-xs">2021 - Saat Ini</span>
+                        <span class="inline-block mt-2 md:mt-0 px-3 py-1 rounded-full bg-brand/10 text-brand font-semibold text-xs">2021 - Saat Ini</span>
                     </div>
-                    <ul class="space-y-2.5 text-sm text-slate-600 list-disc list-inside">
+                    <ul class="space-y-2.5 text-sm text-stone-600 list-disc list-inside">
                         <li>Melakukan peninjauan (review) Change Management operasional menggunakan SQA Checklist guna memastikan seluruh perubahan aplikasi memenuhi standar kualitas, keamanan, dan kepatuhan IT sebelum di-deliver.</li>
                         <li>Menganalisis log data kepatuhan secara berkala menggunakan platform Speedlab (Spirit and Performance CollaborApps).</li>
                         <li>Melakukan rekapitulasi dan evaluasi berkala (compliance rating) terhadap seluruh fungsi/unit kerja terkait kerapihan dan kepatuhan penyusunan dokumen sesuai standar IT Governance.</li>
@@ -193,16 +193,16 @@
                     </ul>
                 </div>
                 <!-- Experience Item 2 -->
-                <div class="p-8 rounded-2xl bg-white border border-slate-200 shadow-sm relative pl-10 md:pl-12">
-                    <div class="absolute left-0 top-0 bottom-0 w-2.5 bg-navy-light rounded-l-2xl"></div>
+                <div class="p-8 rounded-2xl bg-white border border-stone-200 shadow-sm relative pl-10 md:pl-12">
+                    <div class="absolute left-0 top-0 bottom-0 w-2.5 bg-brand-light rounded-l-2xl"></div>
                     <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
                         <div>
-                            <h4 class="text-xl font-bold text-navy">Admin IT / IT Operational Support</h4>
-                            <p class="text-sm font-semibold text-gold-dark">PT Bank Rakyat Indonesia (Persero) Tbk - Jakarta</p>
+                            <h4 class="text-xl font-bold text-brand">Admin IT / IT Operational Support</h4>
+                            <p class="text-sm font-semibold text-accent-dark">PT Bank Rakyat Indonesia (Persero) Tbk - Jakarta</p>
                         </div>
-                        <span class="inline-block mt-2 md:mt-0 px-3 py-1 rounded-full bg-navy/10 text-navy font-semibold text-xs">Juli 2020 - 2021</span>
+                        <span class="inline-block mt-2 md:mt-0 px-3 py-1 rounded-full bg-brand/10 text-brand font-semibold text-xs">Juli 2020 - 2021</span>
                     </div>
-                    <ul class="space-y-2.5 text-sm text-slate-600 list-disc list-inside">
+                    <ul class="space-y-2.5 text-sm text-stone-600 list-disc list-inside">
                         <li>Mengelola seluruh dokumentasi administrasi operasional IT, aset software/hardware, serta pengarsipan dokumen teknis divisi.</li>
                         <li>Membantu pencatatan dan distribusi ticketing system kepada tim support teknis sesuai Service Level Agreement (SLA) yang ditentukan.</li>
                     </ul>
@@ -212,108 +212,108 @@
     </section>
 
     <!-- Projects & Dashboard Section -->
-    <section id="projects" class="py-20 bg-white border-t border-slate-200">
+    <section id="projects" class="py-20 bg-white border-t border-stone-200">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-                <h2 class="text-xs uppercase tracking-widest text-gold-dark font-bold">Portofolio Kerja</h2>
-                <h3 class="text-3xl md:text-4xl font-extrabold text-navy">Jira & SpeedLab Dashboards (Runner-Up Project)</h3>
-                <div class="w-16 h-1 bg-gold mx-auto rounded-full"></div>
-                <p class="text-slate-600 text-sm">Dokumentasi hasil pengembangan dashboard monitoring produktivitas, SLA, SQA Checklist, dan evaluasi kinerja berbasis Atlassian Jira & EazyBI.</p>
+                <h2 class="text-xs uppercase tracking-widest text-accent-dark font-bold">Portofolio Kerja</h2>
+                <h3 class="text-3xl md:text-4xl font-extrabold text-brand">Jira & SpeedLab Dashboards (Runner-Up Project)</h3>
+                <div class="w-16 h-1 bg-accent mx-auto rounded-full"></div>
+                <p class="text-stone-600 text-sm">Dokumentasi hasil pengembangan dashboard monitoring produktivitas, SLA, SQA Checklist, dan evaluasi kinerja berbasis Atlassian Jira & EazyBI.</p>
             </div>
 
             <!-- APQ Team KPI Performance Dashboard -->
             <div class="mb-16">
-                <div class="border-l-4 border-gold pl-4 mb-8">
-                    <h4 class="text-2xl font-bold text-navy">APQ TEAM — KPI PERFORMANCE DASHBOARD</h4>
-                    <p class="text-sm text-slate-500">Monitoring produktivitas & pencapaian KPI per individu secara real-time.</p>
+                <div class="border-l-4 border-accent pl-4 mb-8">
+                    <h4 class="text-2xl font-bold text-brand">APQ TEAM — KPI PERFORMANCE DASHBOARD</h4>
+                    <p class="text-sm text-stone-500">Monitoring produktivitas & pencapaian KPI per individu secara real-time.</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <!-- Card 1 -->
-                    <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between group hover:shadow-md transition">
+                    <div class="bg-white rounded-2xl border border-stone-200 shadow-sm overflow-hidden flex flex-col justify-between group hover:shadow-md transition">
                         <div>
-                            <div class="h-48 overflow-hidden bg-slate-100 border-b border-slate-100 relative">
+                            <div class="h-48 overflow-hidden bg-stone-100 border-b border-stone-100 relative">
                                 <img src="https://i.ibb.co.com/xtQXqyFD/1.png" alt="Header Dashboard" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                             </div>
                             <div class="p-6 space-y-2">
-                                <span class="text-xs font-bold text-gold-dark uppercase tracking-wider">1. Header Dashboard</span>
-                                <h5 class="font-bold text-navy text-lg">Achievement & Navigasi Utama</h5>
-                                <p class="text-xs text-slate-600 leading-relaxed">Menampilkan achievement dari masing-masing individu, FAQ Quality Assurance, Dashboard Speedlab, dan Form pembuatan SQA Checklist.</p>
+                                <span class="text-xs font-bold text-accent-dark uppercase tracking-wider">1. Header Dashboard</span>
+                                <h5 class="font-bold text-brand text-lg">Achievement & Navigasi Utama</h5>
+                                <p class="text-xs text-stone-600 leading-relaxed">Menampilkan achievement dari masing-masing individu, FAQ Quality Assurance, Dashboard Speedlab, dan Form pembuatan SQA Checklist.</p>
                             </div>
                         </div>
                         <div class="px-6 pb-6 pt-2">
-                            <a href="https://ibb.co.com/xtQXqyFD" target="_blank" class="text-xs font-semibold text-navy hover:text-gold flex items-center gap-1.5">
+                            <a href="https://ibb.co.com/xtQXqyFD" target="_blank" class="text-xs font-semibold text-brand hover:text-accent-dark flex items-center gap-1.5">
                                 <i class="fa-solid fa-up-right-from-square"></i> Lihat Eviden Full Size
                             </a>
                         </div>
                     </div>
                     <!-- Card 2 -->
-                    <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between group hover:shadow-md transition">
+                    <div class="bg-white rounded-2xl border border-stone-200 shadow-sm overflow-hidden flex flex-col justify-between group hover:shadow-md transition">
                         <div>
-                            <div class="h-48 overflow-hidden bg-slate-100 border-b border-slate-100 relative">
+                            <div class="h-48 overflow-hidden bg-stone-100 border-b border-stone-100 relative">
                                 <img src="https://i.ibb.co.com/Q34w9Y0K/2.png" alt="Summary" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                             </div>
                             <div class="p-6 space-y-2">
-                                <span class="text-xs font-bold text-gold-dark uppercase tracking-wider">2. Summary</span>
-                                <h5 class="font-bold text-navy text-lg">Grafik Jumlah CM Berdasarkan SDLC</h5>
-                                <p class="text-xs text-slate-600 leading-relaxed">Menampilkan summary review project yang sudah diselesaikan berdasarkan kriteria SDLC: Agile, Waterfall, dan Ops.</p>
+                                <span class="text-xs font-bold text-accent-dark uppercase tracking-wider">2. Summary</span>
+                                <h5 class="font-bold text-brand text-lg">Grafik Jumlah CM Berdasarkan SDLC</h5>
+                                <p class="text-xs text-stone-600 leading-relaxed">Menampilkan summary review project yang sudah diselesaikan berdasarkan kriteria SDLC: Agile, Waterfall, dan Ops.</p>
                             </div>
                         </div>
                         <div class="px-6 pb-6 pt-2">
-                            <a href="https://ibb.co.com/Q34w9Y0K" target="_blank" class="text-xs font-semibold text-navy hover:text-gold flex items-center gap-1.5">
+                            <a href="https://ibb.co.com/Q34w9Y0K" target="_blank" class="text-xs font-semibold text-brand hover:text-accent-dark flex items-center gap-1.5">
                                 <i class="fa-solid fa-up-right-from-square"></i> Lihat Eviden Full Size
                             </a>
                         </div>
                     </div>
                     <!-- Card 3 -->
-                    <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between group hover:shadow-md transition">
+                    <div class="bg-white rounded-2xl border border-stone-200 shadow-sm overflow-hidden flex flex-col justify-between group hover:shadow-md transition">
                         <div>
-                            <div class="h-48 overflow-hidden bg-slate-100 border-b border-slate-100 relative">
+                            <div class="h-48 overflow-hidden bg-stone-100 border-b border-stone-100 relative">
                                 <img src="https://i.ibb.co.com/9myxKcLc/3.png" alt="Performance per individu" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                             </div>
                             <div class="p-6 space-y-2">
-                                <span class="text-xs font-bold text-gold-dark uppercase tracking-wider">3. Performance per individu</span>
-                                <h5 class="font-bold text-navy text-lg">Detail Jumlah Changes Aplikasi (CM)</h5>
-                                <p class="text-xs text-slate-600 leading-relaxed">Assignee adalah nama individu pengerja proyek. SDLC Type: Agile, Waterfall, Ops. Jumlah CM adalah jumlah changes aplikasi dalam 1 tiket yang direview.</p>
+                                <span class="text-xs font-bold text-accent-dark uppercase tracking-wider">3. Performance per individu</span>
+                                <h5 class="font-bold text-brand text-lg">Detail Jumlah Changes Aplikasi (CM)</h5>
+                                <p class="text-xs text-stone-600 leading-relaxed">Assignee adalah nama individu pengerja proyek. SDLC Type: Agile, Waterfall, Ops. Jumlah CM adalah jumlah changes aplikasi dalam 1 tiket yang direview.</p>
                             </div>
                         </div>
                         <div class="px-6 pb-6 pt-2">
-                            <a href="https://ibb.co.com/9myxKcLc" target="_blank" class="text-xs font-semibold text-navy hover:text-gold flex items-center gap-1.5">
+                            <a href="https://ibb.co.com/9myxKcLc" target="_blank" class="text-xs font-semibold text-brand hover:text-accent-dark flex items-center gap-1.5">
                                 <i class="fa-solid fa-up-right-from-square"></i> Lihat Eviden Full Size
                             </a>
                         </div>
                     </div>
                     <!-- Card 4 -->
-                    <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between group hover:shadow-md transition">
+                    <div class="bg-white rounded-2xl border border-stone-200 shadow-sm overflow-hidden flex flex-col justify-between group hover:shadow-md transition">
                         <div>
-                            <div class="h-48 overflow-hidden bg-slate-100 border-b border-slate-100 relative">
+                            <div class="h-48 overflow-hidden bg-stone-100 border-b border-stone-100 relative">
                                 <img src="https://i.ibb.co.com/Jf733fH/4.png" alt="SLA Individu" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                             </div>
                             <div class="p-6 space-y-2">
-                                <span class="text-xs font-bold text-gold-dark uppercase tracking-wider">4. SLA Individu</span>
-                                <h5 class="font-bold text-navy text-lg">Pencapaian Target & Realisasi SLA</h5>
-                                <p class="text-xs text-slate-600 leading-relaxed">Difilter berdasarkan assignee proyek. Issue resolved adalah proyek yang diselesaikan, target SLA, realisasi SLA, dan pencapaian SLA (In SLA / Out SLA).</p>
+                                <span class="text-xs font-bold text-accent-dark uppercase tracking-wider">4. SLA Individu</span>
+                                <h5 class="font-bold text-brand text-lg">Pencapaian Target & Realisasi SLA</h5>
+                                <p class="text-xs text-stone-600 leading-relaxed">Difilter berdasarkan assignee proyek. Issue resolved adalah proyek yang diselesaikan, target SLA, realisasi SLA, dan pencapaian SLA (In SLA / Out SLA).</p>
                             </div>
                         </div>
                         <div class="px-6 pb-6 pt-2">
-                            <a href="https://ibb.co.com/Jf733fH" target="_blank" class="text-xs font-semibold text-navy hover:text-gold flex items-center gap-1.5">
+                            <a href="https://ibb.co.com/Jf733fH" target="_blank" class="text-xs font-semibold text-brand hover:text-accent-dark flex items-center gap-1.5">
                                 <i class="fa-solid fa-up-right-from-square"></i> Lihat Eviden Full Size
                             </a>
                         </div>
                     </div>
                     <!-- Card 5 -->
-                    <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between group hover:shadow-md transition">
+                    <div class="bg-white rounded-2xl border border-stone-200 shadow-sm overflow-hidden flex flex-col justify-between group hover:shadow-md transition">
                         <div>
-                            <div class="h-48 overflow-hidden bg-slate-100 border-b border-slate-100 relative">
+                            <div class="h-48 overflow-hidden bg-stone-100 border-b border-stone-100 relative">
                                 <img src="https://i.ibb.co.com/HD7dwQRm/5.png" alt="Monitoring Project masuk" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                             </div>
                             <div class="p-6 space-y-2">
-                                <span class="text-xs font-bold text-gold-dark uppercase tracking-wider">5. Monitoring Project Masuk</span>
-                                <h5 class="font-bold text-navy text-lg">QIM'S Task Flow</h5>
-                                <p class="text-xs text-slate-600 leading-relaxed">Kolom kiri menampilkan proyek yang sedang direview (Open, In Progress, To Do). Kolom kanan merinci detail proyek per assignee ter-filter secara ascending.</p>
+                                <span class="text-xs font-bold text-accent-dark uppercase tracking-wider">5. Monitoring Project Masuk</span>
+                                <h5 class="font-bold text-brand text-lg">QIM'S Task Flow</h5>
+                                <p class="text-xs text-stone-600 leading-relaxed">Kolom kiri menampilkan proyek yang sedang direview (Open, In Progress, To Do). Kolom kanan merinci detail proyek per assignee ter-filter secara ascending.</p>
                             </div>
                         </div>
                         <div class="px-6 pb-6 pt-2">
-                            <a href="https://ibb.co.com/HD7dwQRm" target="_blank" class="text-xs font-semibold text-navy hover:text-gold flex items-center gap-1.5">
+                            <a href="https://ibb.co.com/HD7dwQRm" target="_blank" class="text-xs font-semibold text-brand hover:text-accent-dark flex items-center gap-1.5">
                                 <i class="fa-solid fa-up-right-from-square"></i> Lihat Eviden Full Size
                             </a>
                         </div>
@@ -323,79 +323,79 @@
 
             <!-- SPEEDLAB DASHBOARD -->
             <div>
-                <div class="border-l-4 border-navy pl-4 mb-8">
-                    <h4 class="text-2xl font-bold text-navy">SPEEDLAB DASHBOARD</h4>
-                    <p class="text-sm text-slate-500">Evaluasi, apresiasi, dan pemantauan kinerja fungsi-fungsi di Divisi APP.</p>
+                <div class="border-l-4 border-brand pl-4 mb-8">
+                    <h4 class="text-2xl font-bold text-brand">SPEEDLAB DASHBOARD</h4>
+                    <p class="text-sm text-stone-500">Evaluasi, apresiasi, dan pemantauan kinerja fungsi-fungsi di Divisi APP.</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     <!-- Card 6 -->
-                    <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between group hover:shadow-md transition">
+                    <div class="bg-white rounded-2xl border border-stone-200 shadow-sm overflow-hidden flex flex-col justify-between group hover:shadow-md transition">
                         <div>
-                            <div class="h-44 overflow-hidden bg-slate-100 border-b border-slate-100 relative">
+                            <div class="h-44 overflow-hidden bg-stone-100 border-b border-stone-100 relative">
                                 <img src="https://i.ibb.co.com/NdDf6gSf/6.png" alt="Header Dashboard Speedlab" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                             </div>
                             <div class="p-6 space-y-2">
-                                <span class="text-xs font-bold text-gold-dark uppercase tracking-wider">6. Header & Summary</span>
-                                <h5 class="font-bold text-navy text-base">Transparansi Perhitungan & Filter</h5>
-                                <p class="text-xs text-slate-600 leading-relaxed">Menampilkan link tata cara pengolahan data ranking dan summary transparan dengan filter nama fungsi, tahun, dan bulan penilaian.</p>
+                                <span class="text-xs font-bold text-accent-dark uppercase tracking-wider">6. Header & Summary</span>
+                                <h5 class="font-bold text-brand text-base">Transparansi Perhitungan & Filter</h5>
+                                <p class="text-xs text-stone-600 leading-relaxed">Menampilkan link tata cara pengolahan data ranking dan summary transparan dengan filter nama fungsi, tahun, dan bulan penilaian.</p>
                             </div>
                         </div>
                         <div class="px-6 pb-6 pt-2">
-                            <a href="https://ibb.co.com/NdDf6gSf" target="_blank" class="text-xs font-semibold text-navy hover:text-gold flex items-center gap-1.5">
+                            <a href="https://ibb.co.com/NdDf6gSf" target="_blank" class="text-xs font-semibold text-brand hover:text-accent-dark flex items-center gap-1.5">
                                 <i class="fa-solid fa-up-right-from-square"></i> Lihat Eviden Full Size
                             </a>
                         </div>
                     </div>
                     <!-- Card 7 -->
-                    <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between group hover:shadow-md transition">
+                    <div class="bg-white rounded-2xl border border-stone-200 shadow-sm overflow-hidden flex flex-col justify-between group hover:shadow-md transition">
                         <div>
-                            <div class="h-44 overflow-hidden bg-slate-100 border-b border-slate-100 relative">
+                            <div class="h-44 overflow-hidden bg-stone-100 border-b border-stone-100 relative">
                                 <img src="https://i.ibb.co.com/xt5X0G6B/7.png" alt="Leaderboard" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                             </div>
                             <div class="p-6 space-y-2">
-                                <span class="text-xs font-bold text-gold-dark uppercase tracking-wider">7. Leaderboard</span>
-                                <h5 class="font-bold text-navy text-base">Score Akhir & Ranking Fungsi</h5>
-                                <p class="text-xs text-slate-600 leading-relaxed">Rekapitulasi jumlah project done, jumlah catatan, score kinclong, dan persentase kinclong per fungsi unit kerja.</p>
+                                <span class="text-xs font-bold text-accent-dark uppercase tracking-wider">7. Leaderboard</span>
+                                <h5 class="font-bold text-brand text-base">Score Akhir & Ranking Fungsi</h5>
+                                <p class="text-xs text-stone-600 leading-relaxed">Rekapitulasi jumlah project done, jumlah catatan, score kinclong, dan persentase kinclong per fungsi unit kerja.</p>
                             </div>
                         </div>
                         <div class="px-6 pb-6 pt-2">
-                            <a href="https://ibb.co.com/xt5X0G6B" target="_blank" class="text-xs font-semibold text-navy hover:text-gold flex items-center gap-1.5">
+                            <a href="https://ibb.co.com/xt5X0G6B" target="_blank" class="text-xs font-semibold text-brand hover:text-accent-dark flex items-center gap-1.5">
                                 <i class="fa-solid fa-up-right-from-square"></i> Lihat Eviden Full Size
                             </a>
                         </div>
                     </div>
                     <!-- Card 8 -->
-                    <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between group hover:shadow-md transition">
+                    <div class="bg-white rounded-2xl border border-stone-200 shadow-sm overflow-hidden flex flex-col justify-between group hover:shadow-md transition">
                         <div>
-                            <div class="h-44 overflow-hidden bg-slate-100 border-b border-slate-100 relative">
+                            <div class="h-44 overflow-hidden bg-stone-100 border-b border-stone-100 relative">
                                 <img src="https://i.ibb.co.com/607d5TCc/8.png" alt="Catatan Review Penilaian" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                             </div>
                             <div class="p-6 space-y-2">
-                                <span class="text-xs font-bold text-gold-dark uppercase tracking-wider">8. Catatan Review</span>
-                                <h5 class="font-bold text-navy text-base">Grafik Temuan Penilaian Speedlab</h5>
-                                <p class="text-xs text-slate-600 leading-relaxed">Menampilkan rincian temuan catatan review yang menjadi dasar pembobotan penilaian Speedlab bulanan.</p>
+                                <span class="text-xs font-bold text-accent-dark uppercase tracking-wider">8. Catatan Review</span>
+                                <h5 class="font-bold text-brand text-base">Grafik Temuan Penilaian Speedlab</h5>
+                                <p class="text-xs text-stone-600 leading-relaxed">Menampilkan rincian temuan catatan review yang menjadi dasar pembobotan penilaian Speedlab bulanan.</p>
                             </div>
                         </div>
                         <div class="px-6 pb-6 pt-2">
-                            <a href="https://i.ibb.co.com/607d5TCc/8.png" target="_blank" class="text-xs font-semibold text-navy hover:text-gold flex items-center gap-1.5">
+                            <a href="https://i.ibb.co.com/607d5TCc/8.png" target="_blank" class="text-xs font-semibold text-brand hover:text-accent-dark flex items-center gap-1.5">
                                 <i class="fa-solid fa-up-right-from-square"></i> Lihat Eviden Full Size
                             </a>
                         </div>
                     </div>
                     <!-- Card 9 -->
-                    <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between group hover:shadow-md transition">
+                    <div class="bg-white rounded-2xl border border-stone-200 shadow-sm overflow-hidden flex flex-col justify-between group hover:shadow-md transition">
                         <div>
-                            <div class="h-44 overflow-hidden bg-slate-100 border-b border-slate-100 relative">
+                            <div class="h-44 overflow-hidden bg-stone-100 border-b border-stone-100 relative">
                                 <img src="https://i.ibb.co.com/xt5X0G6B/7.png" alt="List project catatan" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                             </div>
                             <div class="p-6 space-y-2">
-                                <span class="text-xs font-bold text-gold-dark uppercase tracking-wider">9. List Proyek Catatan</span>
-                                <h5 class="font-bold text-navy text-base">Tracking SQA Checklist Dokumen</h5>
-                                <p class="text-xs text-slate-600 leading-relaxed">Periode penilaian, nama proyek (summary), catatan temuan, lengkap dengan tautan akses langsung ke dokumen SQA Checklist.</p>
+                                <span class="text-xs font-bold text-accent-dark uppercase tracking-wider">9. List Proyek Catatan</span>
+                                <h5 class="font-bold text-brand text-base">Tracking SQA Checklist Dokumen</h5>
+                                <p class="text-xs text-stone-600 leading-relaxed">Periode penilaian, nama proyek (summary), catatan temuan, lengkap dengan tautan akses langsung ke dokumen SQA Checklist.</p>
                             </div>
                         </div>
                         <div class="px-6 pb-6 pt-2">
-                            <a href="https://ibb.co.com/xt5X0G6B" target="_blank" class="text-xs font-semibold text-navy hover:text-gold flex items-center gap-1.5">
+                            <a href="https://ibb.co.com/xt5X0G6B" target="_blank" class="text-xs font-semibold text-brand hover:text-accent-dark flex items-center gap-1.5">
                                 <i class="fa-solid fa-up-right-from-square"></i> Lihat Eviden Full Size
                             </a>
                         </div>
@@ -406,54 +406,54 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="py-20 bg-slate-50 border-t border-slate-200">
+    <section id="skills" class="py-20 bg-stone-50 border-t border-stone-200">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-                <h2 class="text-xs uppercase tracking-widest text-gold-dark font-bold">Keahlian & Kompetensi</h2>
-                <h3 class="text-3xl md:text-4xl font-extrabold text-navy">Keahlian Teknis & Soft Skills</h3>
-                <div class="w-16 h-1 bg-gold mx-auto rounded-full"></div>
+                <h2 class="text-xs uppercase tracking-widest text-accent-dark font-bold">Keahlian & Kompetensi</h2>
+                <h3 class="text-3xl md:text-4xl font-extrabold text-brand">Keahlian Teknis & Soft Skills</h3>
+                <div class="w-16 h-1 bg-accent mx-auto rounded-full"></div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- IT GRC & Compliance -->
-                <div class="p-8 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-4">
-                    <div class="w-12 h-12 rounded-xl bg-navy text-gold flex items-center justify-center text-xl font-bold">
+                <div class="p-8 rounded-2xl bg-white border border-stone-200 shadow-sm space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-brand text-accent flex items-center justify-center text-xl font-bold">
                         <i class="fa-solid fa-building-shield"></i>
                     </div>
-                    <h4 class="font-bold text-navy text-lg">IT Governance & Risk</h4>
+                    <h4 class="font-bold text-brand text-lg">IT Governance & Risk</h4>
                     <div class="flex flex-wrap gap-2 pt-2">
-                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-xs font-semibold">IT Governance</span>
-                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-xs font-semibold">Change Management Review</span>
-                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-xs font-semibold">Compliance Scoring & Evaluation</span>
-                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-xs font-semibold">Dokumen IT Audit</span>
-                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-xs font-semibold">IT Risk Mitigation</span>
-                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-xs font-semibold">Stakeholder Alignment</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 text-stone-700 text-xs font-semibold">IT Governance</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 text-stone-700 text-xs font-semibold">Change Management Review</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 text-stone-700 text-xs font-semibold">Compliance Scoring & Evaluation</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 text-stone-700 text-xs font-semibold">Dokumen IT Audit</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 text-stone-700 text-xs font-semibold">IT Risk Mitigation</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 text-stone-700 text-xs font-semibold">Stakeholder Alignment</span>
                     </div>
                 </div>
                 <!-- Tools & Programming -->
-                <div class="p-8 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-4">
-                    <div class="w-12 h-12 rounded-xl bg-navy text-gold flex items-center justify-center text-xl font-bold">
+                <div class="p-8 rounded-2xl bg-white border border-stone-200 shadow-sm space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-brand text-accent flex items-center justify-center text-xl font-bold">
                         <i class="fa-solid fa-screwdriver-wrench"></i>
                     </div>
-                    <h4 class="font-bold text-navy text-lg">Tools & Programming</h4>
+                    <h4 class="font-bold text-brand text-lg">Tools & Programming</h4>
                     <div class="flex flex-wrap gap-2 pt-2">
-                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-xs font-semibold">Jira (Advanced / Winner)</span>
-                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-xs font-semibold">EazyBI</span>
-                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-xs font-semibold">Python (Basic)</span>
-                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-xs font-semibold">Microsoft Office</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 text-stone-700 text-xs font-semibold">Jira (Advanced / Winner)</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 text-stone-700 text-xs font-semibold">EazyBI</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 text-stone-700 text-xs font-semibold">Python (Basic)</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 text-stone-700 text-xs font-semibold">Microsoft Office</span>
                     </div>
                 </div>
                 <!-- Soft Skills -->
-                <div class="p-8 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-4">
-                    <div class="w-12 h-12 rounded-xl bg-navy text-gold flex items-center justify-center text-xl font-bold">
+                <div class="p-8 rounded-2xl bg-white border border-stone-200 shadow-sm space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-brand text-accent flex items-center justify-center text-xl font-bold">
                         <i class="fa-solid fa-users"></i>
                     </div>
-                    <h4 class="font-bold text-navy text-lg">Soft Skills</h4>
+                    <h4 class="font-bold text-brand text-lg">Soft Skills</h4>
                     <div class="flex flex-wrap gap-2 pt-2">
-                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-xs font-semibold">Manajemen Waktu</span>
-                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-xs font-semibold">Kerjasama Tim (Teamwork)</span>
-                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-xs font-semibold">Problem Solving</span>
-                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-xs font-semibold">Adaptif</span>
-                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-xs font-semibold">Communication & Coordination</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 text-stone-700 text-xs font-semibold">Manajemen Waktu</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 text-stone-700 text-xs font-semibold">Kerjasama Tim (Teamwork)</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 text-stone-700 text-xs font-semibold">Problem Solving</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 text-stone-700 text-xs font-semibold">Adaptif</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 text-stone-700 text-xs font-semibold">Communication & Coordination</span>
                     </div>
                 </div>
             </div>
@@ -461,59 +461,59 @@
     </section>
 
     <!-- Awards, Training & Certifications -->
-    <section id="awards" class="py-20 bg-white border-t border-slate-200">
+    <section id="awards" class="py-20 bg-white border-t border-stone-200">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-                <h2 class="text-xs uppercase tracking-widest text-gold-dark font-bold">Pencapaian & Kredensial</h2>
-                <h3 class="text-3xl md:text-4xl font-extrabold text-navy">Prestasi, Pelatihan & Sertifikasi</h3>
-                <div class="w-16 h-1 bg-gold mx-auto rounded-full"></div>
+                <h2 class="text-xs uppercase tracking-widest text-accent-dark font-bold">Pencapaian & Kredensial</h2>
+                <h3 class="text-3xl md:text-4xl font-extrabold text-brand">Prestasi, Pelatihan & Sertifikasi</h3>
+                <div class="w-16 h-1 bg-accent mx-auto rounded-full"></div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Award 1 -->
-                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between space-y-6">
+                <div class="p-8 rounded-2xl bg-stone-50 border border-stone-200 flex flex-col justify-between space-y-6">
                     <div class="space-y-4">
-                        <div class="w-12 h-12 rounded-xl bg-gold text-navy flex items-center justify-center text-xl font-bold">
+                        <div class="w-12 h-12 rounded-xl bg-accent text-brand flex items-center justify-center text-xl font-bold">
                             <i class="fa-solid fa-trophy"></i>
                         </div>
-                        <h4 class="font-bold text-navy text-lg">2nd Place Winner - JIRA Competition</h4>
-                        <p class="text-xs font-semibold text-gold-dark">Desember 2024 - Application Management & Operation Division PT Bank Rakyat Indonesia (Persero) Tbk</p>
-                        <p class="text-xs text-slate-600 leading-relaxed">Menilai dan mengimplementasikan solusi optimasi workflow, manajemen tiket/insiden, serta perancangan dashboard analisis data IT yang efisien menggunakan sistem Atlassian Jira.</p>
+                        <h4 class="font-bold text-brand text-lg">2nd Place Winner - JIRA Competition</h4>
+                        <p class="text-xs font-semibold text-accent-dark">Desember 2024 - Application Management & Operation Division PT Bank Rakyat Indonesia (Persero) Tbk</p>
+                        <p class="text-xs text-stone-600 leading-relaxed">Menilai dan mengimplementasikan solusi optimasi workflow, manajemen tiket/insiden, serta perancangan dashboard analisis data IT yang efisien menggunakan sistem Atlassian Jira.</p>
                     </div>
                     <div>
-                        <a href="https://ibb.co.com/fGtLBYKV" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-navy text-white text-xs font-semibold hover:bg-navy-light transition">
-                            <i class="fa-solid fa-certificate text-gold"></i> Lihat Sertifikat Eviden
+                        <a href="https://ibb.co.com/fGtLBYKV" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-brand text-white text-xs font-semibold hover:bg-brand-light transition">
+                            <i class="fa-solid fa-certificate text-accent"></i> Lihat Sertifikat Eviden
                         </a>
                     </div>
                 </div>
                 <!-- Award 2 -->
-                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between space-y-6">
+                <div class="p-8 rounded-2xl bg-stone-50 border border-stone-200 flex flex-col justify-between space-y-6">
                     <div class="space-y-4">
-                        <div class="w-12 h-12 rounded-xl bg-navy text-gold flex items-center justify-center text-xl font-bold">
+                        <div class="w-12 h-12 rounded-xl bg-brand text-accent flex items-center justify-center text-xl font-bold">
                             <i class="fa-solid fa-medal"></i>
                         </div>
-                        <h4 class="font-bold text-navy text-lg">3rd Top Student Newbie - BSDP</h4>
-                        <p class="text-xs font-semibold text-gold-dark">2022 - BRILian Specialist Development Program (BSDP)</p>
-                        <p class="text-xs text-slate-600 leading-relaxed">Peraihan peringkat ke-3 lulusan terbaik kategori Newbie pada program pengembangan spesialis BRI.</p>
+                        <h4 class="font-bold text-brand text-lg">3rd Top Student Newbie - BSDP</h4>
+                        <p class="text-xs font-semibold text-accent-dark">2022 - BRILian Specialist Development Program (BSDP)</p>
+                        <p class="text-xs text-stone-600 leading-relaxed">Peraihan peringkat ke-3 lulusan terbaik kategori Newbie pada program pengembangan spesialis BRI.</p>
                     </div>
                     <div>
-                        <a href="https://ibb.co.com/PZFkYXcP" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-navy text-white text-xs font-semibold hover:bg-navy-light transition">
-                            <i class="fa-solid fa-certificate text-gold"></i> Lihat Sertifikat Eviden
+                        <a href="https://ibb.co.com/PZFkYXcP" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-brand text-white text-xs font-semibold hover:bg-brand-light transition">
+                            <i class="fa-solid fa-certificate text-accent"></i> Lihat Sertifikat Eviden
                         </a>
                     </div>
                 </div>
                 <!-- Award 3 -->
-                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between space-y-6">
+                <div class="p-8 rounded-2xl bg-stone-50 border border-stone-200 flex flex-col justify-between space-y-6">
                     <div class="space-y-4">
-                        <div class="w-12 h-12 rounded-xl bg-navy text-gold flex items-center justify-center text-xl font-bold">
+                        <div class="w-12 h-12 rounded-xl bg-brand text-accent flex items-center justify-center text-xl font-bold">
                             <i class="fa-solid fa-shield-check"></i>
                         </div>
-                        <h4 class="font-bold text-navy text-lg">Training ISO/IEC 27001: ISMS</h4>
-                        <p class="text-xs font-semibold text-gold-dark">2022 - By Robere</p>
-                        <p class="text-xs text-slate-600 leading-relaxed">Pemahaman standar internasional manajemen keamanan informasi, penilaian risiko, dan kontrol kepatuhan operasional IT.</p>
+                        <h4 class="font-bold text-brand text-lg">Training ISO/IEC 27001: ISMS</h4>
+                        <p class="text-xs font-semibold text-accent-dark">2022 - By Robere</p>
+                        <p class="text-xs text-stone-600 leading-relaxed">Pemahaman standar internasional manajemen keamanan informasi, penilaian risiko, dan kontrol kepatuhan operasional IT.</p>
                     </div>
                     <div>
-                        <a href="https://ibb.co.com/fV8qb9x7" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-navy text-white text-xs font-semibold hover:bg-navy-light transition">
-                            <i class="fa-solid fa-certificate text-gold"></i> Lihat Sertifikat Eviden
+                        <a href="https://ibb.co.com/fV8qb9x7" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-brand text-white text-xs font-semibold hover:bg-brand-light transition">
+                            <i class="fa-solid fa-certificate text-accent"></i> Lihat Sertifikat Eviden
                         </a>
                     </div>
                 </div>
@@ -522,67 +522,67 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gradient-to-b from-navy to-navy-dark text-white">
+    <section id="contact" class="py-20 bg-gradient-to-b from-brand to-brand-dark text-white">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-                <h2 class="text-xs uppercase tracking-widest text-gold font-bold">Hubungi Saya</h2>
+                <h2 class="text-xs uppercase tracking-widest text-accent font-bold">Hubungi Saya</h2>
                 <h3 class="text-3xl md:text-4xl font-extrabold">Mari Terhubung & Berkolaborasi</h3>
-                <div class="w-16 h-1 bg-gold mx-auto rounded-full"></div>
+                <div class="w-16 h-1 bg-accent mx-auto rounded-full"></div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-12 gap-12 max-w-5xl mx-auto items-center">
                 <div class="md:col-span-5 space-y-6">
                     <div class="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10">
-                        <div class="w-12 h-12 rounded-lg bg-gold text-navy flex items-center justify-center text-xl font-bold">
+                        <div class="w-12 h-12 rounded-lg bg-accent text-brand flex items-center justify-center text-xl font-bold">
                             <i class="fa-solid fa-envelope"></i>
                         </div>
                         <div>
-                            <span class="text-xs text-slate-400 block">Email</span>
-                            <a href="mailto:kumbararobi@gmail.com" class="font-semibold text-sm hover:text-gold transition">kumbararobi@gmail.com</a>
+                            <span class="text-xs text-stone-400 block">Email</span>
+                            <a href="mailto:kumbararobi@gmail.com" class="font-semibold text-sm hover:text-accent transition">kumbararobi@gmail.com</a>
                         </div>
                     </div>
                     <div class="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10">
-                        <div class="w-12 h-12 rounded-lg bg-gold text-navy flex items-center justify-center text-xl font-bold">
+                        <div class="w-12 h-12 rounded-lg bg-accent text-brand flex items-center justify-center text-xl font-bold">
                             <i class="fa-solid fa-phone"></i>
                         </div>
                         <div>
-                            <span class="text-xs text-slate-400 block">Telepon / WhatsApp</span>
-                            <a href="tel:081315733168" class="font-semibold text-sm hover:text-gold transition">081315733168</a>
+                            <span class="text-xs text-stone-400 block">Telepon / WhatsApp</span>
+                            <a href="tel:081315733168" class="font-semibold text-sm hover:text-accent transition">081315733168</a>
                         </div>
                     </div>
                     <div class="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10">
-                        <div class="w-12 h-12 rounded-lg bg-gold text-navy flex items-center justify-center text-xl font-bold">
+                        <div class="w-12 h-12 rounded-lg bg-accent text-brand flex items-center justify-center text-xl font-bold">
                             <i class="fa-brands fa-linkedin-in"></i>
                         </div>
                         <div>
-                            <span class="text-xs text-slate-400 block">LinkedIn</span>
-                            <a href="https://linkedin.com/in/robi-kumbara-422a761a0" target="_blank" class="font-semibold text-sm hover:text-gold transition">robi-kumbara-422a761a0</a>
+                            <span class="text-xs text-stone-400 block">LinkedIn</span>
+                            <a href="https://linkedin.com/in/robi-kumbara-422a761a0" target="_blank" class="font-semibold text-sm hover:text-accent transition">robi-kumbara-422a761a0</a>
                         </div>
                     </div>
                     <div class="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10">
-                        <div class="w-12 h-12 rounded-lg bg-gold text-navy flex items-center justify-center text-xl font-bold">
+                        <div class="w-12 h-12 rounded-lg bg-accent text-brand flex items-center justify-center text-xl font-bold">
                             <i class="fa-brands fa-instagram"></i>
                         </div>
                         <div>
-                            <span class="text-xs text-slate-400 block">Instagram</span>
-                            <a href="https://instagram.com/robi.kumbara" target="_blank" class="font-semibold text-sm hover:text-gold transition">@robi.kumbara</a>
+                            <span class="text-xs text-stone-400 block">Instagram</span>
+                            <a href="https://instagram.com/robi.kumbara" target="_blank" class="font-semibold text-sm hover:text-accent transition">@robi.kumbara</a>
                         </div>
                     </div>
                 </div>
                 <div class="md:col-span-7">
                     <form class="p-8 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15 space-y-6">
                         <div class="space-y-2">
-                            <label class="text-xs font-semibold tracking-wider uppercase text-slate-300">Nama Lengkap</label>
-                            <input type="text" placeholder="Masukkan nama Anda" class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/20 text-white placeholder-slate-400 focus:outline-none focus:border-gold transition text-sm">
+                            <label class="text-xs font-semibold tracking-wider uppercase text-stone-300">Nama Lengkap</label>
+                            <input type="text" placeholder="Masukkan nama Anda" class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/20 text-white placeholder-stone-400 focus:outline-none focus:border-accent transition text-sm">
                         </div>
                         <div class="space-y-2">
-                            <label class="text-xs font-semibold tracking-wider uppercase text-slate-300">Email</label>
-                            <input type="email" placeholder="nama@email.com" class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/20 text-white placeholder-slate-400 focus:outline-none focus:border-gold transition text-sm">
+                            <label class="text-xs font-semibold tracking-wider uppercase text-stone-300">Email</label>
+                            <input type="email" placeholder="nama@email.com" class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/20 text-white placeholder-stone-400 focus:outline-none focus:border-accent transition text-sm">
                         </div>
                         <div class="space-y-2">
-                            <label class="text-xs font-semibold tracking-wider uppercase text-slate-300">Pesan</label>
-                            <textarea rows="4" placeholder="Tuliskan pesan atau penawaran..." class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/20 text-white placeholder-slate-400 focus:outline-none focus:border-gold transition text-sm"></textarea>
+                            <label class="text-xs font-semibold tracking-wider uppercase text-stone-300">Pesan</label>
+                            <textarea rows="4" placeholder="Tuliskan pesan atau penawaran..." class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/20 text-white placeholder-stone-400 focus:outline-none focus:border-accent transition text-sm"></textarea>
                         </div>
-                        <button type="submit" class="w-full py-3.5 rounded-xl bg-gold hover:bg-gold-light text-navy font-bold shadow-lg transition">Kirim Pesan</button>
+                        <button type="submit" class="w-full py-3.5 rounded-xl bg-accent hover:bg-accent-light text-brand-dark font-bold shadow-lg transition">Kirim Pesan</button>
                     </form>
                 </div>
             </div>
@@ -590,11 +590,11 @@
     </section>
 
     <!-- Footer -->
-    <footer class="py-8 bg-navy-dark text-slate-400 text-xs border-t border-white/10 text-center">
+    <footer class="py-8 bg-brand-dark text-stone-400 text-xs border-t border-white/10 text-center">
         <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
             <p>&copy; 2026 Robi Kumbara. All rights reserved.</p>
             <div class="flex items-center gap-6">
-                <a href="#hero" class="hover:text-gold transition">Kembali ke Atas</a>
+                <a href="#hero" class="hover:text-accent transition">Kembali ke Atas</a>
             </div>
         </div>
     </footer>
